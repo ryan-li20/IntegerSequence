@@ -9,9 +9,17 @@ public class Tester{
     // }
     // System.out.println();
     int[]nums = {1,3,5,0,-1,3,9};
-    IntegerSequence as = new ArraySequence(nums);
+    IntegerSequence asd = new ArraySequence(nums);
 
     System.out.println("ArraySequence(array):");
+    while(asd.hasNext()){
+      System.out.print(asd.next()+", ");
+    }
+    System.out.println();
+    IntegerSequence r = new Range(10,20);
+    IntegerSequence as = new ArraySequence(r);
+
+    System.out.println("ArraySequence(seq):");
     while(as.hasNext()){
       System.out.print(as.next()+", ");
     }
